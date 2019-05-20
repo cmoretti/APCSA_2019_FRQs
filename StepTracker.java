@@ -14,7 +14,7 @@ public class StepTracker {
     public void addDailySteps(int steps) {
         totalSteps += steps;
         totalDays++;
-        if(steps > threshold) activeDays++;
+        if(steps >= threshold) activeDays++;
     }
 
     public int activeDays() {
